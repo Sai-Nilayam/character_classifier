@@ -20,7 +20,7 @@ source_path = input('Enter the Source Directory path: ')
 destination_path = input('Enter the Destination Directory path: ')
 class_label = input('Enter the Class Label: ')
 
-# Listing all the files from the Source Directory
+# Listing all the files from the Sowurce Directory
 files = os.listdir(source_path)
 # Now this line of codes also catches some files those are not necessary and
 # even not visible by the File Manager GUI. So let's make another list that
