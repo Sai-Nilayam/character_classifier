@@ -7,6 +7,7 @@ Usage
 For Python users, Here is piece of code that explains the usage.
 
 -------------------------------------------------------------------------------
+```python
 import requests
 
 # You must specify 'rb' parameter while opening the file.
@@ -30,6 +31,7 @@ print(response)
 # Getting the respose content.
 print(response.content, end='\n')
 print(respose.text)
+```
 -------------------------------------------------------------------------------
 
 Thank you for taking a look. 
