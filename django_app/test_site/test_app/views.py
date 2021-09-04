@@ -38,20 +38,30 @@ def index(request):
 
 
 def character_classifier(request):
+    import os
+    script_path = os.path.abspath(__file__)
+    base_path_arr = script_path.split('/')
+    base_path_arr = base_path_arr[0: len(base_path_arr) - 1]
+    base_path = '/'.join(base_path_arr) + '/'
+
     # Getting FILE data from the request object.
     file = request.FILES['test_file']
 
     # Saving file to Django server.
     ext = str(file).split('.')[1]
-    file_path = 'test_app/uploaded_files/uploaded_file_{}.{}'.format(
+    # file_path = 'test_app/uploaded_files/uploaded_file_{}.{}'.format(
+    #     str(1), ext)
+    file_path = base_path + 'uploaded_files/uploaded_file_{}.{}'.format(
         str(1), ext)
+
     f = open(file_path, 'wb')
     f.write(file.read())
     f.close()
 
     # Importing the Model.
     import tensorflow as tf
-    model = tf.keras.models.load_model('test_app/models/model_1/')
+    # model = tf.keras.models.load_model('test_app/models/model_1/')
+    model = tf.keras.models.load_model(base_path + 'models/model_1/')
 
     # Grabing the file.
     import cv2
@@ -61,7 +71,7 @@ def character_classifier(request):
     # Flattening the Imgae array.
     resized_img = resized_img.reshape(-1, 32 * 32 * 3)
 
-    # # Making prediction using our Model.
+    # Making prediction using our Model.
     prediction = model.predict(resized_img)
 
     import numpy as np
@@ -70,4 +80,10 @@ def character_classifier(request):
     classes = ['0-Alpha', '1-Beta', '2-Gamma']
     class_ = classes[class_index]
 
+    import sys
+    path = sys.executable
+    version = sys.version
+    return_str = str(class_) + ' ' + str(path) + ' ' + str(version)
+
     return HttpResponse(class_)
+    # return HttpResponse('Completed')

@@ -23,15 +23,17 @@ print(response)
 print(response.content)
 '''
 
+
 """For seding a Request with a file attached to it to server and getting 
 a file as Response."""
 import requests
 
 # You must specify 'rb' parameter while opening the file.
-f = open('data/test/gamma/2_4.jpg', 'rb')
+f = open('data/test/gamma/2_2.jpg', 'rb')
 
 # url = 'http://127.0.0.1:8000/test_app/'
-url = 'http://127.0.0.1/test_app/character_classifier'
+
+url = 'http://127.0.0.1:80/test_app/character_classifier'
 # url = 'http://127.0.0.1:8000/test_app/character_classifier'
 
 files = {
@@ -48,4 +50,4 @@ print(response)
 
 # Getting the respose content.
 # print(response.content)
-print(response.text)
+print(response.content)
