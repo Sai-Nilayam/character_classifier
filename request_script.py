@@ -28,8 +28,11 @@ print(response.content)
 a file as Response."""
 import requests
 
+img_path = input('Enter the path of the Image: ')
+
 # You must specify 'rb' parameter while opening the file.
-f = open('data/test/gamma/2_2.jpg', 'rb')
+# f = open('data/test/gamma/2_2.jpg', 'rb')
+f = open(img_path, 'rb')
 
 # url = 'http://127.0.0.1:8000/test_app/'
 
