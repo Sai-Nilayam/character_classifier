@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-385xb(=p&^sak3gjzpnu^e4@_z^k@kzmj$j-e8ikosz5d!@13l
 DEBUG = True
 
 # Self added codes.
-ALLOWED_HOSTS = ['172.105.47.76', 'aiwebsites.in', '127.0.0.1']
+ALLOWED_HOSTS = ['172.105.47.76', 'aiwebsites.in', 'www.aiwebsites.in', '127.0.0.1']
 
 
 # Application definition
