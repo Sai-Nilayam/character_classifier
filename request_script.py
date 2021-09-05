@@ -31,13 +31,13 @@ import requests
 # img_path = input('Enter the path of the Image: ')
 
 # You must specify 'rb' parameter while opening the file.
-f = open('data/test/gamma/2_2.jpg', 'rb')
+f = open('data/test/gamma/2_1.jpg', 'rb')
 # f = open(img_path, 'rb')
 
 # url = 'http://127.0.0.1:8000/test_app/'
 # url = 'http://127.0.0.1:8000/test_app/character_classifier'
-# url = 'http://127.0.0.1:80/test_app/character_classifier'
-url = 'http://www.aiwebsites.in/test_app/character_classifier'
+url = 'http://127.0.0.1:80/test_app/character_classifier'
+# url = 'http://www.aiwebsites.in/test_app/character_classifier'
 
 files = {
     'test_file': f,

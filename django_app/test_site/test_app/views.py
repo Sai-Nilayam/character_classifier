@@ -80,10 +80,8 @@ def character_classifier(request):
     classes = ['0-Alpha', '1-Beta', '2-Gamma']
     class_ = classes[class_index]
 
-    import sys
-    path = sys.executable
-    version = sys.version
-    return_str = str(class_) + ' ' + str(path) + ' ' + str(version)
+    return_str = '\'' + class_ + '\'' + ' ' + 'This Project is made by \'Sai Nilayam Sahu\'.' \
+        + ' Find awesome AI Services at \'www.aiwebsites.in\'.'
 
-    return HttpResponse(class_)
+    return HttpResponse(return_str)
     # return HttpResponse('Completed')
