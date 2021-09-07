@@ -33,7 +33,7 @@ print(response)
 
 # Getting the respose content.
 print(response.content, end='\n')
-print(respose.text)
+print(response.text)
 ```
 
 Thank you for taking a look. 
