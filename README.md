@@ -1,9 +1,9 @@
-This is a Character Recogniser Application. The way it is intended to be used 
+This is a Character Recogniser Application. The way it is intended to be used
 is, all you need to request to one of the page to our server with the required
 parameters. Our Server will Respond you back with the appropriate answer.
 
-In this project right now there are just three classes Alpha-class-0, 
-Beta-class-1, Gamma-class-2. Use cropped images of the characters. As shown in 
+In this project right now there are just three classes Alpha - class-0,
+Beta - class-1, Gamma - class-2. Use cropped images of the characters. As shown in
 the figure below.
 
 Usage
@@ -36,7 +36,12 @@ print(response.content, end='\n')
 print(response.text)
 ```
 
-Thank you for taking a look. 
+Please go through the video link for better understanding of the usage and get a
+simple overview of the project.
 
-Please ask any queries you want. I would be delight to answer all of the 
+https: // youtu.be / jVj8rw3Zd - Q
+
+Thank you for taking a look.
+
+Please ask any queries you want. I would be delight to answer all of the
 queries.
