@@ -39,7 +39,7 @@ print(response.text)
 Please go through the video link for better understanding of the usage and get a
 simple overview of the project.
 
-https: // youtu.be / jVj8rw3Zd - Q
+https://youtu.be/jVj8rw3Zd-Q
 
 Thank you for taking a look.
 
