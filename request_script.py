@@ -33,7 +33,7 @@ import requests
 # You must specify 'rb' parameter while opening the file.
 # f = open('data/test/alpha/0_4.jpg', 'rb')
 # f = open(img_path, 'rb')
-f = open('imgs/gamma_1.jpg', 'rb')
+f = open('imgs/2_2.jpg', 'rb')
 
 # url = 'http://127.0.0.1:8000/test_app/'
 # url = 'http://127.0.0.1:8000/test_app/character_classifier'
