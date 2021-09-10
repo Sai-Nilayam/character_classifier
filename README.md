@@ -1,10 +1,13 @@
-This is a Character Recogniser Application. The way it is intended to be used
+This is a Character Classifier Application. The way it is intended to be used
 is, all you need to request to one of the page to our server with the required
 parameters. Our Server will Respond you back with the appropriate answer.
 
 In this project right now there are just three classes Alpha - class-0,
 Beta - class-1, Gamma - class-2. Use cropped images of the characters. As shown in
 the figure below.
+
+This Model gives 100% accuracy upon Characters written by myself as the Data was
+completely written by myself during Training.
 
 Usage
 -----
